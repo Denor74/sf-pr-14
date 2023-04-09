@@ -1,0 +1,9 @@
+
+=========================================
+JSON и php
+========================================
+https://snipp.ru/php/json-php
+https://serblog.ru/php-json-zapis-chtenie-i-redaktirovanie-json-fajla-pishem-polnocennoe-prilozhenie/
+https://ploshadka.net/json-to-php/
+https://www.w3schools.com/php/php_file_create.asp
+

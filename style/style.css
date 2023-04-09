@@ -1,0 +1,19 @@
+html {
+    background: url(/img/fon.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+header {
+    flex-wrap: nowrap;
+    display: flex;
+    background-color: #fef9f5;
+    padding: 10px 15px;
+}

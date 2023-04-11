@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+$patch = $_SERVER['HTTP_HOST'];
+$auth = $_SESSION['auth'] ?? null;
+// Подключаем JSON с данными пользователей
+$usersJSON = file_get_contents('users.json');
+$usersArr = json_decode($usersJSON, true);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +24,45 @@
 </head>
 <body>
     <header>
-     Лучший SPA салон   
+     <div>Лучший SPA салон </div>  
+     <div class="avtorisation">
+     <?php 
+     if(!$auth) { ?>
+
+      <form action="upload-14-7.php" method="post">
+          <input name="login" type="text" placeholder="Логин">
+          <input name="password" type="password" placeholder="Пароль">
+          <input name="submit" type="submit" value="Войти">
+      </form>
+
+
+<?php } else {
+    echo '<h2>Вы уже авторизованы </h2>';
+}
+
+// контент для администратора
+
+?>
+     </div>
     </header>
+    <div>
+    <?php
+echo '<pre>';
+    $data = date("d.m");
+    echo $data . '<br>';
+    var_dump($data);
+    echo '$usersJSON: ' . '<br>';
+    var_dump($usersJSON);
+    echo 'DIR' . '<br>';
+    echo '$usersArr: ' . '<br>';
+    var_dump($usersArr);
+    echo '$usersArr name: ' . $usersArr[0]['login'] . '<br>';
+// echo __DIR__;
+// echo 'patch' . PHP_EOL;
+echo $patch;
+echo '</pre>';
+    ?>
+
+    </div>
 </body>
 </html>

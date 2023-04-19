@@ -45,6 +45,15 @@ $usersArr = json_decode($usersJSON, true);
 ?>
      </div>
     </header>
+    <article>
+        <h1>Услуги нашего SPA-салона</h1>
+        <div class="uslugi-main">
+            <div class="usluga"><img src="/img/spa-female.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для женщин</div></div>
+            <div class="usluga"><img src="/img/spa-male.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для мужчин</div></div>
+            <div class="usluga"><img src="/img/spa-dvoe.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для двоих</div></div>
+
+        </div>
+    </article>
     <div>
     <?php
 echo '<pre>';

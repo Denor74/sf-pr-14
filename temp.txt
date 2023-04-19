@@ -7,3 +7,11 @@ https://serblog.ru/php-json-zapis-chtenie-i-redaktirovanie-json-fajla-pishem-pol
 https://ploshadka.net/json-to-php/
 https://www.w3schools.com/php/php_file_create.asp
 
+
+Тег <article>
+Тег <article> задает содержание сайта вроде новости, статьи, записи блога, форума или др.
+Тег <footer>
+Тег <header>
+Тег <section>
+Задаёт раздел документа, может применяться для блока новостей, контактной информации, глав текста, вкладок в диалоговом окне и др.
+Тег <video>

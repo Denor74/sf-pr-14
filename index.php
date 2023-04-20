@@ -16,7 +16,8 @@ $usersArr = json_decode($usersJSON, true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA - салон</title>
     <link
-      rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
@@ -45,13 +46,18 @@ $usersArr = json_decode($usersJSON, true);
 ?>
      </div>
     </header>
+    
     <article>
         <h1>Услуги нашего SPA-салона</h1>
-        <div class="uslugi-main">
-            <div class="usluga"><img src="/img/spa-female.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для женщин</div></div>
-            <div class="usluga"><img src="/img/spa-male.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для мужчин</div></div>
-            <div class="usluga"><img src="/img/spa-dvoe.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для двоих</div></div>
+        <div class="row justify-content-center mx-auto">
+            <div class="col m-3"><div class="usluga"><img src="/img/spa-female.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для женщин</div></div></div>
+            <div class="col m-3"><div class="usluga"><img src="/img/spa-male.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для мужчин</div></div></div>
+            <div class="col m-3"><div class="usluga"><img src="/img/spa-dvoe.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для двоих</div></div></div>
 
+        </div>
+        <h1>Акции</h1>
+        <div class="row">
+            <div class="mx-auto"><a href="#" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж"><div class="uslugi-action">Зарегистрируйся и получи тайский массаж на двоих в подарок!!!</div></a></div>
         </div>
     </article>
     <div>

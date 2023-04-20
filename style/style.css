@@ -1,7 +1,3 @@
-html {
-
-}
-
 body {
 margin: 0;
 padding: 0;
@@ -38,7 +34,19 @@ header {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
+}
 
+.uslugi-action {
+    position: relative;
+    text-align: right;
+    top: -75px;
+    /*margin-right: 30px;*/
+    color: #fef9f5;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(245, 131, 1, 0.8); 
+    padding: 10px; 
 }
 
 article h1 {
@@ -46,8 +54,10 @@ article h1 {
  text-align: center;
  margin: 20px 0;
  text-transform: uppercase;
- 
+}
 
+article {
+    padding: 20px 30px;
 }
 
 .usluga img {
@@ -56,6 +66,19 @@ article h1 {
     height: 100%;
 }
 
-.logo {
-    
+.a_action {
+    display: block;
+    width: 400px;
+    height: 250px;
+    border: 2px solid #fef9f5;
+}
+.a_action:hover {
+     border-color: #ff4252;
+     text-decoration: none;
+         
+}
+.a_action img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }

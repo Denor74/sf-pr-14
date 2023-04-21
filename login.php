@@ -27,8 +27,16 @@ $usersArr = json_decode($usersJSON, true);
     <header class="row">
      <div class="col-9">Лучший SPA салон </div>  
      <div class="col-3 avtorisation">
-        <a href="/login.php">Авторизоваться на сайте</a>
-     <!-- <?php 
+        <a href="index.php">Перейти на главную</a>
+     <!-- -->
+     </div>
+    </header>
+    
+    <article>
+<div class="container bg-light">
+    <div class="row div-center align-items-center p-3 my-3 border">
+    <div class="col col-md-10 offset-md-10">
+    <?php 
      if(!$auth) { ?>
 
       <form action="upload-14-7.php" method="post">
@@ -44,22 +52,11 @@ $usersArr = json_decode($usersJSON, true);
 
 // контент для администратора
 
-?>-->
-     </div>
-    </header>
-    
-    <article>
-        <h1>Услуги нашего SPA-салона</h1>
-        <div class="row justify-content-center mx-auto">
-            <div class="col m-3"><div class="usluga"><img src="/img/spa-female.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для женщин</div></div></div>
-            <div class="col m-3"><div class="usluga"><img src="/img/spa-male.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для мужчин</div></div></div>
-            <div class="col m-3"><div class="usluga"><img src="/img/spa-dvoe.webp" alt="услуги SPA салона"><div class="uslugi-tittle">SPA для двоих</div></div></div>
-
-        </div>
-        <h1>Акции</h1>
-        <div class="row">
-            <div class="mx-auto"><a href="/" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж"><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div></a></div>
-        </div>
+?>
+</div>
+</div>
+</div>
+ 
     </article>
     <div>
     <?php

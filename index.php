@@ -58,7 +58,7 @@ $usersArr = json_decode($usersJSON, true);
         </div>
         <h1>Акции</h1>
         <div class="row">
-            <div class="mx-auto"><a href="/" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж"><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div></a></div>
+            <div class="mx-auto"><a href="/login.php" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж"><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div></a></div>
         </div>
     </article>
     <div>

@@ -24,7 +24,7 @@ $usersArr = json_decode($usersJSON, true);
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="row">
+    <header class="row ">
      <div class="col-9">Лучший SPA салон </div>  
      <div class="col-3 avtorisation">
         <a href="index.php">Перейти на главную</a>
@@ -33,9 +33,9 @@ $usersArr = json_decode($usersJSON, true);
     </header>
     
     <article>
-<div class="container bg-light">
-    <div class="row div-center align-items-center p-3 my-3 border">
-    <div class="col col-md-10 offset-md-10">
+<div class="flex-container">
+    <div class="row-cont">
+    <div class="flex-item">
     <?php 
      if(!$auth) { ?>
 
@@ -59,7 +59,7 @@ $usersArr = json_decode($usersJSON, true);
  
     </article>
     <div>
-    <?php
+  <!-- <?php
 echo '<pre>';
     $data = date("d.m");
     echo $data . '<br>';
@@ -74,7 +74,7 @@ echo '<pre>';
 // echo 'patch' . PHP_EOL;
 echo $patch;
 echo '</pre>';
-    ?>
+    ?>-->
 
     </div>
 </body>

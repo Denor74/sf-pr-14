@@ -25,7 +25,7 @@ $usersArr = json_decode($usersJSON, true);
 </head>
 <body>
     <header class="row">
-     <div class="col-9">Лучший SPA салон </div>  
+     <div class="col-9">Лучший SPA салон. +79999999999</div>  
      <div class="col-3 avtorisation">
         <a href="/login.php">Авторизоваться на сайте</a>
      <!-- <?php 

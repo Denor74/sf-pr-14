@@ -25,7 +25,7 @@ $usersArr = json_decode($usersJSON, true);
 </head>
 <body>
     <header class="row ">
-     <div class="col-9">Лучший SPA салон </div>  
+     <div class="col-9">Лучший SPA салон. +79999999999</div>  
      <div class="col-3 avtorisation">
         <a href="index.php">Перейти на главную</a>
      <!-- -->
@@ -39,10 +39,17 @@ $usersArr = json_decode($usersJSON, true);
     <?php 
      if(!$auth) { ?>
 
-      <form action="upload-14-7.php" method="post">
-          <input name="login" type="text" placeholder="Логин">
-          <input name="password" type="password" placeholder="Пароль">
-          <input name="submit" type="submit" value="Войти">
+      <form action="upload-14-7.php" method="post"  class="form-group">
+      <div class="form-group">
+    <label for="text">Введите login</label>
+          <input name="login" type="text" placeholder="Логин"  class="form-control">
+          </div>
+          <div class="form-group">
+          <label for="password">Введите пароль</label>
+          <input name="password" type="password" placeholder="Пароль"  class="form-control">
+          </div>
+          <input name="submit" type="submit" value="Войти" class="btn btn-secondary">
+      
       </form>
 
 

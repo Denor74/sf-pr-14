@@ -1,5 +1,5 @@
 <?php
-
+include "load.php";
 
 
 ?>
@@ -59,25 +59,7 @@
 
     </article>
     <div>
-        <?php
-        echo '<pre>';
-        $data = date("d.m");
-        echo $data . '<br>';
-        var_dump($data);
-        echo '$usersJSON: ' . '<br>';
-        var_dump($usersJSON);
-        echo 'DIR' . '<br>';
-        echo '$usersArr: ' . '<br>';
-        var_dump($usersArr);
-        echo '$usersArr name: ' . $usersArr[0]['login'] . '<br>';
-        var_dump($auth);
-        echo '$auth: ' . $auth . '<br>';
-        // echo __DIR__;
-        // echo 'patch' . PHP_EOL;
-        echo $patch;
-        echo '</pre>';
-        ?>
-
+    
     </div>
 </body>
 

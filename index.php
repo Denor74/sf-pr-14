@@ -1,12 +1,5 @@
 <?php
-
-session_start();
-$patch = $_SERVER['HTTP_HOST'];
-$auth = $_SESSION['auth'] ?? null;
-// Подключаем JSON с данными пользователей
-$usersJSON = file_get_contents('users.json');
-$usersArr = json_decode($usersJSON, true);
-
+include "load.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +18,12 @@ $usersArr = json_decode($usersJSON, true);
 </head>
 <body>
     <header class="row">
-     <div class="col-9">Лучший SPA салон. +79999999999</div>  
+     <div class="col-7">Лучший SPA салон. +79999999999</div>
+     <?php
+     if($auth) {
+        Echo '<div class="col-2">Вы вошли как: ' . $_SESSION['login'] . '</div>';
+     }
+     ?>
      <div class="col-3 avtorisation">
         <a href="/login.php">Авторизоваться на сайте</a>
      <!-- <?php 
@@ -62,22 +60,22 @@ $usersArr = json_decode($usersJSON, true);
         </div>
     </article>
     <div>
-    <?php
-echo '<pre>';
-    $data = date("d.m");
-    echo $data . '<br>';
-    var_dump($data);
-    echo '$usersJSON: ' . '<br>';
-    var_dump($usersJSON);
-    echo 'DIR' . '<br>';
-    echo '$usersArr: ' . '<br>';
-    var_dump($usersArr);
-    echo '$usersArr name: ' . $usersArr[0]['login'] . '<br>';
+    <!-- <?php
+// echo '<pre>';
+//     $data = date("d.m");
+//     echo $data . '<br>';
+//     var_dump($data);
+//     echo '$usersJSON: ' . '<br>';
+//     var_dump($usersJSON);
+//     echo 'DIR' . '<br>';
+//     echo '$usersArr: ' . '<br>';
+//     var_dump($usersArr);
+//     echo '$usersArr name: ' . $usersArr[0]['login'] . '<br>';
 // echo __DIR__;
 // echo 'patch' . PHP_EOL;
-echo $patch;
-echo '</pre>';
-    ?>
+// echo $patch;
+// echo '</pre>';
+    ?> -->
 
     </div>
 </body>

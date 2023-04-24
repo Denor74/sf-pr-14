@@ -17,10 +17,10 @@ include "load.php";
 </head>
 <body>
     <header class="row">
-     <div class="col-7">Лучший SPA салон. +79999999999</div>
+     <div class="col-7 text-success logo"><span>Лучший SPA салон</span> +79999999999</div>
      <?php
      if($auth) {
-        echo '<div class="col-2">Вы вошли как: ' . $_SESSION['login'] . '</div>';
+        echo '<div class="col-2 user"><span>Вы вошли как: </span>' . $_SESSION['login'] . '</div>';
      }
      ?>
      <div class="col-3 avtorisation">

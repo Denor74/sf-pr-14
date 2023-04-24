@@ -12,8 +12,7 @@ include "load.php";
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -21,29 +20,12 @@ include "load.php";
      <div class="col-7">Лучший SPA салон. +79999999999</div>
      <?php
      if($auth) {
-        Echo '<div class="col-2">Вы вошли как: ' . $_SESSION['login'] . '</div>';
+        echo '<div class="col-2">Вы вошли как: ' . $_SESSION['login'] . '</div>';
      }
      ?>
      <div class="col-3 avtorisation">
         <a href="/login.php">Авторизоваться на сайте</a>
-     <!-- <?php 
-     if(!$auth) { ?>
-
-      <form action="upload-14-7.php" method="post">
-          <input name="login" type="text" placeholder="Логин">
-          <input name="password" type="password" placeholder="Пароль">
-          <input name="submit" type="submit" value="Войти">
-      </form>
-
-
-<?php } else {
-    echo '<h2>Вы уже авторизованы </h2>';
-}
-
-// контент для администратора
-
-?>-->
-     </div>
+          </div>
     </header>
     
     <article>
@@ -60,22 +42,7 @@ include "load.php";
         </div>
     </article>
     <div>
-    <!-- <?php
-// echo '<pre>';
-//     $data = date("d.m");
-//     echo $data . '<br>';
-//     var_dump($data);
-//     echo '$usersJSON: ' . '<br>';
-//     var_dump($usersJSON);
-//     echo 'DIR' . '<br>';
-//     echo '$usersArr: ' . '<br>';
-//     var_dump($usersArr);
-//     echo '$usersArr name: ' . $usersArr[0]['login'] . '<br>';
-// echo __DIR__;
-// echo 'patch' . PHP_EOL;
-// echo $patch;
-// echo '</pre>';
-    ?> -->
+
 
     </div>
 </body>

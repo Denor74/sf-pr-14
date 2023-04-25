@@ -15,3 +15,13 @@ https://www.w3schools.com/php/php_file_create.asp
 Тег <section>
 Задаёт раздел документа, может применяться для блока новостей, контактной информации, глав текста, вкладок в диалоговом окне и др.
 Тег <video>
+
+============================================================
+сколько дней до дня рождения
+https://ru.stackoverflow.com/questions/741701/Скрипт-который-считает-сколько-дней-осталось-до-дня-рождения
+
+https://php.ru/forum/threads/skript-kotoryj-schitaet-skolko-dnej-ostalos-do-dnja-rozhdenija.67041/
+
+https://web-answers.ru/php/mne-nuzhno-rasschitat-vremja-do-sledujushhego-dnja.html
+
+============================================================

@@ -25,3 +25,8 @@ https://php.ru/forum/threads/skript-kotoryj-schitaet-skolko-dnej-ostalos-do-dnja
 https://web-answers.ru/php/mne-nuzhno-rasschitat-vremja-do-sledujushhego-dnja.html
 
 ============================================================
+
+https://php.ru/manual/function.date.html  // date()
+
+проверка корректности даты
+https://php.ru/manual/function.checkdate.html

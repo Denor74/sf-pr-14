@@ -49,6 +49,19 @@ header {
     padding: 10px; 
 }
 
+.action-time {
+    position: relative;
+    text-align: center;
+    top: -95px;
+    /*margin-right: 30px;*/
+    color: #fef9f5;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(245, 9, 1, 0.8); 
+    padding: 10px; 
+}
+
 article h1 {
  color: #ff4252;
  text-align: center;

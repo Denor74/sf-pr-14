@@ -23,13 +23,15 @@ if (null !== $username || null !== $password) {
     foreach ($usersArr as $key => $value) {
         if ($value["login"] == $username and $value["pass"] == $password) {
             $hasLoginPass = true;
-            echo 'Есть слвпадение';
+            //echo 'Есть слвпадение';
             //Стартуем сессию
             session_start();
             //Пишем в сессию, что мы авторизовались
             $_SESSION['auth'] = true;
             //Пишем в сессию догин пользователя
             $_SESSION['login'] = $username;
+            //Записываем время входа на сайт
+            $_SESSION['timeLogin'] = time();
         }
     }
 }

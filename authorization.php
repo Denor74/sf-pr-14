@@ -41,6 +41,7 @@ $auth = $_SESSION['auth'] ?? null;
 
 // Если авторизованы 
 if ($auth) {
+    sleep(2);
     $new_url = '/index.php';
     header('Location: ' . $new_url);
     die();

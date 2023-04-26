@@ -51,6 +51,8 @@ include "load.php";
         </div>
         </div>
         <h1>Акции</h1>
+
+
         <div class="container">
             <div class="d-flex p-2">
 
@@ -61,11 +63,13 @@ include "load.php";
             </div>
 
 
-            <
+            
             <div class="flex-fill p-2">
                 <div class="div-birthday">
                     <div>Акция для именниника</div>
-                    <div class="form-day"><form action="/birthday.php" method="post" class="form-group">
+                    <?php if($bdAction == 1) { ?><div>Вы не правильно ввели дату</div> <?php } ?>
+                    <div class="form-day">
+                        <form action="/birthday.php" method="post" class="form-group">
                         <div class="form-group">
                             <label for="text">Введите дату рождения</label>
                             <input name="birthdayUser" type="text" placeholder="дд.мм.гггг" class="form-control">

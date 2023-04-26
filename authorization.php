@@ -15,7 +15,7 @@ $username = $_POST['login'] ?? null;
 $password = md5($_POST['password']) ?? null;
 // admin pass 123 // user pass 111;
 
-
+// вводим переменную для прроверки логина и пароля
 $hasLoginPass = false;
 // ПРоверяем на наличие данных переданных из POST
 if (null !== $username || null !== $password) {
@@ -36,16 +36,23 @@ if (null !== $username || null !== $password) {
     }
 }
 
+
 // Проверяем авторизацию
 $auth = $_SESSION['auth'] ?? null;
 
 // Если авторизованы 
+if ($auth == null) {
+    // Пишем в сессию, Ошибка авторизации
+    $_SESSION['authErr'] = true;
+    $login_url = '/login.php';
+    header('Location: ' . $login_url);
+}
 if ($auth) {
-    sleep(2);
+    sleep(1);
     $new_url = '/index.php';
     header('Location: ' . $new_url);
     die();
-}
+} 
 
-echo '$_SESSION ' . PHP_EOL;
-var_dump($_SESSION);
+// echo '$_SESSION ' . PHP_EOL;
+// var_dump($_SESSION);

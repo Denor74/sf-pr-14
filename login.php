@@ -1,5 +1,8 @@
 <?php
+
 include "load.php";
+
+
 
 
 ?>
@@ -16,6 +19,8 @@ include "load.php";
 </head>
 
 <body>
+<!-- <?php var_dump($authErr); ?>
+<?php var_dump($auth); ?> -->
     <header class="row ">
         <div class="col-9">Лучший SPA салон. +79999999999</div>
         <div class="col-3 avtorisation">
@@ -32,7 +37,11 @@ include "load.php";
                     // если пользователь не авторизован выводим форму авторизации
                     if (!$auth) { ?>
 
-                        <form action="/authorization.php" method="post" class="form-group">
+                        <?php if($authErr) {
+                        echo '<div class="error">Вы ввели не верный логин или пароль</div>'; 
+                    }
+                        ?>
+                        <form id="login" action="/authorization.php" method="post" class="form-group">
                             <div class="form-group">
                                 <label for="text">Введите login</label>
                                 <input name="login" type="text" placeholder="Логин" class="form-control">
@@ -46,7 +55,7 @@ include "load.php";
                         </form>
 
 
-                    <?php } else {
+                    <?php } if ($auth) {
                         echo '<h2>Вы уже авторизованы как' . $_SESSION['login'] . '</h2>';
                     }
 

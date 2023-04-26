@@ -1,7 +1,7 @@
 # Editor directories and files
 .idea
 .vscode
-temp.txt
+.temp.txt
 *.suo
 *.ntvs*
 *.njsproj

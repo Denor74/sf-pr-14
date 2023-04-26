@@ -34,33 +34,35 @@ include "load.php";
         <div class="container flex">
             <div class="m-2">
 
-                <div class="flex-fill"><div><a href="/login.php" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж">
-                        <?php if (!$auth) { ?><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div>
-                        <?php } else { ?><div class="action-time">Успейте забрать подарок!!!<br>осталось<br><?= timeAction(); ?></div><?php } ?>
-                    </a></div></div>
+                <div class="flex-fill">
+                    <div><a href="/login.php" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж">
+                            <?php if (!$auth) { ?><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div>
+                            <?php } else { ?><div class="action-time">Успейте забрать подарок!!!<br>осталось<br><?= timeAction(); ?></div><?php } ?>
+                        </a></div>
+                </div>
             </div>
 
 
-            
+
             <div class="m-2">
                 <div class="div-birthday">
                     <div>Акция для именниника</div>
-                    <?php if($bdAction == 1) { ?><div>Вы не правильно ввели дату</div> <?php } ?>
-                    <?php if($bdAction == 2) { ?><div class="bd-action">Поздравляем с днюхой! Ваш код на получение 5% скидки "BIRTHDAY"</div> <?php } ?>
-                    <?php if($bdAction == 3) { ?><div>Сегодня не ваш день ...</div> <?php } ?>
+                    <?php if ($bdAction == 1) { ?><div>Вы не правильно ввели дату</div> <?php } ?>
+                    <?php if ($bdAction == 2) { ?><div class="bd-action">Поздравляем с днюхой! Ваш код на получение 5% скидки "BIRTHDAY"</div> <?php } ?>
+                    <?php if ($bdAction == 3) { ?><div>Сегодня не ваш день ...</div> <?php } ?>
                     <div class="form-day">
                         <form action="/birthday.php" method="post" class="form-group">
-                        <div class="form-group">
-                            <label for="text">Введите дату рождения</label>
-                            <input name="birthdayUser" type="text" placeholder="дд.мм.гггг" class="form-control">
-                        </div>
-                        <input name="submit" type="submit" value="Отправить" class="btn btn-secondary">
+                            <div class="form-group">
+                                <label for="text">Введите дату рождения</label>
+                                <input name="birthdayUser" type="text" placeholder="дд.мм.гггг" class="form-control">
+                            </div>
+                            <input name="submit" type="submit" value="Отправить" class="btn btn-secondary">
 
-                    </form>
+                        </form>
                     </div>
                 </div>
             </div>
-             
+
 
 
         </div>
@@ -68,24 +70,24 @@ include "load.php";
         </div>
         <h1>Услуги нашего SPA-салона</h1>
         <div class="container ">
-        
-        <div class="row justify-content-between">
-            <div class="col-sm-4">
-                <div class="usluga"><img src="/img/spa-female.webp" alt="услуги SPA салона">
-                    <div class="uslugi-tittle">SPA для женщин</div>
+
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    <div class="usluga"><img src="/img/spa-female.webp" alt="услуги SPA салона">
+                        <div class="uslugi-tittle">SPA для женщин</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="usluga"><img src="/img/spa-male.webp" alt="услуги SPA салона">
+                        <div class="uslugi-tittle">SPA для мужчин</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="usluga"><img src="/img/spa-dvoe.webp" alt="услуги SPA салона">
+                        <div class="uslugi-tittle">SPA для двоих</div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="usluga"><img src="/img/spa-male.webp" alt="услуги SPA салона">
-                    <div class="uslugi-tittle">SPA для мужчин</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="usluga"><img src="/img/spa-dvoe.webp" alt="услуги SPA салона">
-                    <div class="uslugi-tittle">SPA для двоих</div>
-                </div>
-            </div>
-        </div>
         </div>
 
     </article>

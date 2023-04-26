@@ -1,11 +1,11 @@
 body {
-margin: 0;
-padding: 0;
-background: url(/img/fon.jpeg);
-background-position: center top;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+    margin: 0;
+    padding: 0;
+    background: url(/img/fon.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 }
 
 .uslugi-main {
-    display: flex; 
+    display: flex;
 }
 
 .usluga {
@@ -45,8 +45,8 @@ header {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: rgba(245, 131, 1, 0.8); 
-    padding: 10px; 
+    background-color: rgba(245, 131, 1, 0.8);
+    padding: 10px;
 }
 
 .action-time {
@@ -58,15 +58,15 @@ header {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: rgba(245, 9, 1, 0.8); 
-    padding: 10px; 
+    background-color: rgba(245, 9, 1, 0.8);
+    padding: 10px;
 }
 
 article h1 {
- color: #ff4252;
- text-align: center;
- margin: 20px 0;
- text-transform: uppercase;
+    color: #ff4252;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
 }
 
 article {
@@ -85,11 +85,13 @@ article {
     height: 250px;
     border: 2px solid #fef9f5;
 }
+
 .a_action:hover {
-     border-color: #ff4252;
-     text-decoration: none;
-         
+    border-color: #ff4252;
+    text-decoration: none;
+
 }
+
 .a_action img {
     object-fit: cover;
     width: 100%;
@@ -118,24 +120,30 @@ article {
     align-items: center;
     justify-content: center;
 }
+
 .row-cont {
     width: auto;
 }
+
 .flex-item {
     background-color: rgba(224, 59, 30, 0.658);
     padding: 15px;
     width: 300px;
-    height:250px;
+    height: 250px;
     margin-top: 30px;
     color: white;
     text-align: center;
     border-radius: 0.25rem;
 }
+
 .user span {
     color: chocolate;
     font-weight: bold;
 }
-.logo span {font-weight: bold;}
+
+.logo span {
+    font-weight: bold;
+}
 
 
 
@@ -143,10 +151,12 @@ article {
     margin: 15px 0;
     text-transform: none;
 }
+
 .bd-action {
     color: yellow;
 }
+
 .flex {
     display: flex;
-    justify-content:center
+    justify-content: center
 }

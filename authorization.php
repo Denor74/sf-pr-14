@@ -37,16 +37,17 @@ if (null !== $username || null !== $password) {
 }
 
 
-// Проверяем авторизацию
+
 $auth = $_SESSION['auth'] ?? null;
 
-// Если авторизованы 
+
 if ($auth == null) {
     // Пишем в сессию, Ошибка авторизации
     $_SESSION['authErr'] = true;
     $login_url = '/login.php';
     header('Location: ' . $login_url);
 }
+// Проверяем авторизацию
 if ($auth) {
     sleep(1);
     $new_url = '/index.php';

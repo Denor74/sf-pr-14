@@ -6,7 +6,7 @@ $auth = $_SESSION['auth'] ?? null;
 
 $authErr = $_SESSION['authErr'] ?? null;
 $bdAction = $_SESSION['bdSession'] ?? null;
-var_dump($bdAction);
+//var_dump($bdAction);
 
 // Переменная для проверки правильности авторизации
 //$authErr = $_SESSION['authErr']; 

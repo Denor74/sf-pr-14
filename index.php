@@ -29,8 +29,45 @@ include "load.php";
     </header>
 
     <article>
+
+        <h1>Акции сегодня</h1>
+        <div class="container flex">
+            <div class="m-2">
+
+                <div class="flex-fill"><div><a href="/login.php" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж">
+                        <?php if (!$auth) { ?><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div>
+                        <?php } else { ?><div class="action-time">Успейте забрать подарок!!!<br>осталось<br><?= timeAction(); ?></div><?php } ?>
+                    </a></div></div>
+            </div>
+
+
+            
+            <div class="m-2">
+                <div class="div-birthday">
+                    <div>Акция для именниника</div>
+                    <?php if($bdAction == 1) { ?><div>Вы не правильно ввели дату</div> <?php } ?>
+                    <?php if($bdAction == 2) { ?><div class="bd-action">Поздравляем с днюхой! Ваш код на получение 5% скидки "BIRTHDAY"</div> <?php } ?>
+                    <?php if($bdAction == 3) { ?><div>Сегодня не ваш день ...</div> <?php } ?>
+                    <div class="form-day">
+                        <form action="/birthday.php" method="post" class="form-group">
+                        <div class="form-group">
+                            <label for="text">Введите дату рождения</label>
+                            <input name="birthdayUser" type="text" placeholder="дд.мм.гггг" class="form-control">
+                        </div>
+                        <input name="submit" type="submit" value="Отправить" class="btn btn-secondary">
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+             
+
+
+        </div>
+
+        </div>
         <h1>Услуги нашего SPA-салона</h1>
-        <div class="container">
+        <div class="container ">
         
         <div class="row justify-content-between">
             <div class="col-sm-4">
@@ -50,43 +87,6 @@ include "load.php";
             </div>
         </div>
         </div>
-        <h1>Акции</h1>
-
-
-        <div class="container">
-            <div class="d-flex p-2">
-
-                <div class="flex-fill"><div><a href="/login.php" class="a_action"><img src="/img/action.jpg" alt="Акция - тайский массаж">
-                        <?php if (!$auth) { ?><div class="uslugi-action">Авторизуйся и получи тайский массаж на двоих в подарок!!!</div>
-                        <?php } else { ?><div class="action-time">Успейте забрать подарок!!!<br>осталось<br><?= timeAction(); ?></div><?php } ?>
-                    </a></div></div>
-            </div>
-
-
-            
-            <div class="flex-fill p-2">
-                <div class="div-birthday">
-                    <div>Акция для именниника</div>
-                    <?php if($bdAction == 1) { ?><div>Вы не правильно ввели дату</div> <?php } ?>
-                    <div class="form-day">
-                        <form action="/birthday.php" method="post" class="form-group">
-                        <div class="form-group">
-                            <label for="text">Введите дату рождения</label>
-                            <input name="birthdayUser" type="text" placeholder="дд.мм.гггг" class="form-control">
-                        </div>
-                        <input name="submit" type="submit" value="Отправить" class="btn btn-secondary">
-
-                    </form>
-                    </div>
-                </div>
-            </div>
-             
-
-
-        </div>
-
-        </div>
-
 
     </article>
     <div>

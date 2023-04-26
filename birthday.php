@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 // $birthdayForm = '26.04.1994';
 // Получаем данные из формы 
@@ -9,9 +10,9 @@ echo PHP_EOL;
 
 if ($birthdayForm == '') {
     //Стартуем сессию
-    
+
     $_SESSION['bdSession'] = 1;
-    $bdAction = $_SESSION['bdSession'];
+    //$bdAction = $_SESSION['bdSession'];
      $new_url = '/index.php';
      header('Location: ' . $new_url);
      die();
@@ -24,10 +25,11 @@ $bdArr = explode('.', $birthdayForm);
 var_dump($bdArr);
 // проверяем правильность заполнения даты рождения
 $bdCheck = checkdate($bdArr[1], $bdArr[0], $bdArr[2]);
-var_dump($bdCheck);
+var_dump($bdCheck)
+;
 if($bdCheck) {
      //прописываем в сессию, что дата др введена
-     $_SESSION['bdSession'] = true;
+     //$_SESSION['bdSession'] = 2;
 
 var_dump($_SESSION['bdSession']);
      //получаем сегодняшнюю дату
@@ -40,25 +42,21 @@ var_dump($_SESSION['bdSession']);
     //  echo $userToday . PHP_EOL;
     // echo $dateToday . PHP_EOL;
      if ($dateToday == $userToday) {
-         $_SESSION['bdSession'] = true;
+
+         $_SESSION['bdSession'] = 2;
         //   $bdAction = 'Код "BIRTHDAY" для получения 5% скидки';
         //   echo $bdAction;
         //  echo $bdAction;
-     }
-
- } else {
+     } else {
  //прописываем в сессию, что дата др введена
-     $_SESSION['bdSession'] = false;
+     $_SESSION['bdSession'] = 3;
      // $bdActionNo = "Вы ввели не правильную дату";
      // echo $bdActionNo;
+        } 
  }
 
-$bdAction = $_SESSION['bdSession'] ?? null;
+
 
 // var_dump($_SESSION['bdSession']);
   $new_url = '/index.php';
   header('Location: ' . $new_url);
-
-
-
-?>

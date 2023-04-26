@@ -143,3 +143,10 @@ article {
     margin: 15px 0;
     text-transform: none;
 }
+.bd-action {
+    color: yellow;
+}
+.flex {
+    display: flex;
+    justify-content:center
+}
